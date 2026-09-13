@@ -83,7 +83,7 @@ body {
     color: #302a16;
 }
 
-.recipe-card .column-text h3 {
+.recipe-card .column-text h2 {
     font-family: 'Playfair Display', serif;
     font-size: 35px;
     margin-bottom: 20px;
@@ -133,7 +133,6 @@ body {
     border-radius: 4px;
     display: block;
     margin: 0 auto;
-    border-radius: 15px;
 }
 
 /* Recipe page box */
