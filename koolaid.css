@@ -9,6 +9,12 @@ h1, h2 {
     margin-bottom: 70px;
 }
 
+.page-subtitle {
+    text-align: center;
+    color: #fff4d3;
+    font-size: 1.2rem;
+}
+
 /* Main page background */
 body {
     font-family: 'Nunito', sans-serif;
@@ -112,6 +118,13 @@ body {
     border-radius: 8px;
 }
 
+.proven {
+    text-align: center;
+    color: #fff4d3;
+    margin: 30px 0;
+    font-size: 1.1rem;
+}
+
 /* Recipe page hero image */
 .recipe-hero {
     width: 100%;
@@ -120,19 +133,18 @@ body {
     border-radius: 4px;
     display: block;
     margin: 0 auto;
+    border-radius: 15px;
 }
 
 /* Recipe page box */
 .recipe-box {
-    background-image: url("bg2.png");
-    background-size: cover;
-    background-position: center;
+    background-color: #b68b56;
     max-width: 1400px;
     margin: 40px auto;
     padding: 80px;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    color: #1d1414;
+    color: #302a16;
     font-size: 2.0rem;
 }
 
@@ -200,7 +212,7 @@ body {
     width: 320px;
     height: 100vh;
     background: #b68b56;
-    border-right: 4px solid #fffdfd;
+    border-right: 4px solid #800000;
     border-left: none;
     box-shadow: 5px 0 20px rgba(0,0,0,0.3);
     transition: left 0.35s ease;
@@ -228,9 +240,9 @@ body {
 
 .sidebar h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #fff4d3;
+    color: #800000;
 }
 
 .sidebar ul {
@@ -262,7 +274,6 @@ body {
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
-/* Outer dark border pointer */
 .text-bubble::before {
     content: '';
     position: absolute;
@@ -273,7 +284,6 @@ body {
     border-color: transparent transparent #800000 transparent;
 }
 
-/* Inner cream background fill for pointer */
 .text-bubble::after {
     content: '';
     position: absolute;
