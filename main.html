@@ -8,9 +8,9 @@
 <body>
 
 <h1>Fried Chicken Hub</h1>
-<p style="text-align:center; color:#fff4d3; font-size: 1.2rem;">Fried chicken and refreshments.</p>
+<p style="text-align:center;">Fried chicken and refreshments.</p>
 
-<div class="recipe-wrapper" id="recipes-section">
+<div class="recipe-wrapper">
 
     <button class="scroll-arrow" onclick="scrollUp()">▲</button>
 
@@ -78,15 +78,15 @@
 
 </div>
 
-<h2 id="pairings-section">The Perfect Summer Pairings</h2>
+    <h2>The Perfect Summer Pairings</h2>
 <div class="pairing-list">
-    <ul>
-        <li><strong>Fresh Watermelon:</strong> Chilled juicy slices to cool down the palate.</li>
-        <li><strong>Cold Kool-Aid:</strong> Sweet Tropical Punch flavor served over ice.</li>
-    </ul>    
+        <ul>
+            <li><strong>Fresh Watermelon:</strong> Chilled juicy slices to cool down the palate.</li>
+            <li><strong>Cold Kool-Aid:</strong> Sweet Tropical Punch flavor served over ice.</li>
+        </ul>    
 </div>
 
-<h2 id="gallery-section">The Complete Spread</h2>
+<h2>The Complete Spread</h2>
 
 <div class="bottom-gallery">
     <img src="chicken.jpg" alt="Chicken Platter">
@@ -94,46 +94,25 @@
     <img src="koolaid.jpg" alt="Kool-Aid Jug">
 </div>
 
-<div class="proven" style="text-align: center; color: #fff4d3; margin: 30px 0; font-size: 1.1rem;">
+<div class="proven">
     <p>
         <em>tested and proven by Gursimarjeet the professional fried chicken man</em>
     </p>
 </div>
 
-<!-- CSS-only Help Button & Sidebar (t18) -->
-<div class="help-widget">
-    <input type="checkbox" id="help-toggle" class="help-toggle-input">
-    <label for="help-toggle" class="help-btn">?</label>
-
-    <div id="faq-sidebar" class="sidebar">
-        <label for="help-toggle" class="close-btn">&times;</label>
-        <h3>Quick Navigation</h3>
-        <ul>
-            <li class="bubble-item">
-                Where to find recipes?
-                <span class="text-bubble">click on image for recipes</span>
-            </li>
-            <li><a href="#pairings-section">Where to find summer pairings?</a></li>
-            <li><a href="#gallery-section">Where to find the complete spread gallery?</a></li>
-        </ul>
-    </div>
-</div>
 
 <script>
 function scrollUp() {
     document.querySelector(".recipe-scroll").scrollBy({
-        top: -550,
+        top: -500,
         behavior: "smooth"
     });
 }
 
 function scrollDown() {
     document.querySelector(".recipe-scroll").scrollBy({
-        top: 550,
+        top: 500,
         behavior: "smooth"
     });
 }
 </script>
-
-</body>
-</html>
