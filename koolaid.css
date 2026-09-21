@@ -66,6 +66,9 @@ body {
     scroll-snap-align: start;
 }
 
+.recipe-card {
+    border: 3px solid #800000;
+}
 /* Recipe images */
 .recipe-card .column-img {
     flex: 1.5;
@@ -102,6 +105,8 @@ body {
 .recipe-card .column-text p {
     font-size: 24px;
     line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* Up and down arrows */
