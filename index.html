@@ -120,15 +120,21 @@
 
 <script>
 function scrollUp() {
-    document.querySelector(".recipe-scroll").scrollBy({
-        top: -550,
+    const container = document.querySelector(".recipe-scroll");
+    const card = document.querySelector(".recipe-card");
+
+    container.scrollBy({
+        top: -card.offsetHeight,
         behavior: "smooth"
     });
 }
 
 function scrollDown() {
-    document.querySelector(".recipe-scroll").scrollBy({
-        top: 550,
+    const container = document.querySelector(".recipe-scroll");
+    const card = document.querySelector(".recipe-card");
+
+    container.scrollBy({
+        top: card.offsetHeight,
         behavior: "smooth"
     });
 }
