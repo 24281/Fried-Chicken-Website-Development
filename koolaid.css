@@ -164,9 +164,18 @@ body {
 
 /* Summer pairings */
 .pairing-list {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    padding: 25px 40px;
+    background: #b68b56;
+    border: 3px solid #800000;
+    border-radius: 20px;
     font-size: 1.4rem;
-    margin-left: 600px;
     color: #302a16;
+}
+
+.pairing-list li {
+    margin-bottom: 15px;
 }
 
 .back-nav {
