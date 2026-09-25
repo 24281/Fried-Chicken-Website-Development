@@ -117,28 +117,39 @@
         </ul>
     </div>
 </div>
-
+    
 <script>
+const recipeScroll = document.querySelector(".recipe-scroll");
+
+recipeScroll.addEventListener("scroll", () => {
+    if (recipeScroll.scrollTop + recipeScroll.clientHeight >= recipeScroll.scrollHeight - 5) {
+        recipeScroll.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+});
+
 function scrollUp() {
-    const container = document.querySelector(".recipe-scroll");
     const card = document.querySelector(".recipe-card");
 
-    container.scrollBy({
+    recipeScroll.scrollBy({
         top: -card.offsetHeight,
         behavior: "smooth"
     });
 }
 
 function scrollDown() {
-    const container = document.querySelector(".recipe-scroll");
     const card = document.querySelector(".recipe-card");
 
-    container.scrollBy({
+    recipeScroll.scrollBy({
         top: card.offsetHeight,
         behavior: "smooth"
     });
 }
 </script>
+    
 <a href="#" class="back-to-top" aria-label="Back to top">↑</a>
+    
 </body>
 </html>
