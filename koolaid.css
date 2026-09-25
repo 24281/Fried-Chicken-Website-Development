@@ -359,3 +359,28 @@ body {
     color: #800000;
     text-decoration: underline;
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #800000;
+    color: #fff4d3;
+    border: 2px solid #fff4d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.back-to-top:hover {
+    transform: scale(1.1);
+    background: #a00000;
+}
