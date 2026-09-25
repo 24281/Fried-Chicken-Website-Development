@@ -229,6 +229,16 @@ body {
     z-index: 1000;
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     user-select: none;
+    
+}
+.help-btn {
+    ...
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.help-btn:hover {
+    transform: scale(1.1);
+    background: #a00000;
 }
 
 .sidebar {
@@ -247,6 +257,23 @@ body {
     box-sizing: border-box;
     z-index: 1001;
     color: #302a16;
+}
+
+.sidebar a {
+    color: #302a16;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.sidebar a:hover {
+    color: #800000;
+    background: #fff4d3;
+    text-decoration: none;
 }
 
 #help-toggle:checked ~ .sidebar {
