@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Sets character encoding and browser title, and links our custom stylesheet -->
     <meta charset="UTF-8">
     <title>Fried Chicken Hub</title>
     <link rel="stylesheet" href="koolaid.css">
 </head>
 <body>
 
+<!-- Main Page Title & Subtitle -->
 <h1>Fried Chicken Hub</h1>
 <p class="page-subtitle">Fried chicken and refreshments.</p>
 
+<!-- Recipe Scroll Section Wrapper -->
 <div class="recipe-wrapper" id="recipes-section">
 
+    <!-- Button to scroll the recipe list upwards -->
     <button class="scroll-arrow" onclick="scrollUp()">▲</button>
 
+    <!-- Scrollable container holding the individual recipe cards -->
     <div class="recipe-scroll">
 
+        <!-- Recipe Card 1: Classic Southern -->
         <div class="recipe-card">
             <div class="column-img">
                 <a href="southern.html">
                     <img src="classic.avif" alt="Classic Southern Fried Chicken">
                 </a>
             </div>
-
             <div class="column-text">
                 <h2>Classic Southern Fried Chicken</h2>
                 <p>
@@ -34,13 +39,13 @@
             </div>
         </div>
 
+        <!-- Recipe Card 2: Nashville Hot -->
         <div class="recipe-card">
             <div class="column-img">
                 <a href="nashville.html">
                     <img src="nashville.jpg" alt="Nashville Hot Chicken">
                 </a>
             </div>
-
             <div class="column-text">
                 <h2>Nashville Hot Chicken</h2>
                 <p>
@@ -53,13 +58,13 @@
             </div>
         </div>
 
+        <!-- Recipe Card 3: Crispy Buttermilk Tenders -->
         <div class="recipe-card">
             <div class="column-img">
                 <a href="buttermilk.html">
                     <img src="buttermilk.jpg" alt="Crispy Buttermilk Tenders">
                 </a>
             </div>
-
             <div class="column-text">
                 <h2>Crispy Buttermilk Tenders</h2>
                 <p>
@@ -74,10 +79,12 @@
 
     </div>
 
+    <!-- Button to scroll the recipe list downwards -->
     <button class="scroll-arrow" onclick="scrollDown()">▼</button>
 
 </div>
 
+<!-- Summer Pairings Section -->
 <h2 id="pairings-section">The Perfect Summer Pairings</h2>
 <div class="pairing-list">
     <ul>
@@ -86,21 +93,24 @@
     </ul>    
 </div>
 
+<!-- Image Gallery Section -->
 <h2 id="gallery-section">The Complete Spread</h2>
-
 <div class="bottom-gallery">
     <img src="chicken.jpg" alt="Chicken Platter">
     <img src="watermelon.jpeg" alt="Watermelon Slices">
     <img src="koolaid.jpg" alt="Kool-Aid Jug">
 </div>
 
+<!-- Footer Attribution -->
 <div class="proven">
     <p>
         <em>tested and proven by Gursimarjeet the professional fried chicken man</em>
     </p>
 </div>
 
+<!-- Help Widget / FAQ Sidebar Component -->
 <div class="help-widget">
+    <!-- Checkbox trick to toggle the sidebar open and closed without JS -->
     <input type="checkbox" id="help-toggle" class="help-toggle-input">
     <label for="help-toggle" class="help-btn">?</label>
 
@@ -119,8 +129,10 @@
 </div>
     
 <script>
+// Selects the scrolling container for recipes
 const recipeScroll = document.querySelector(".recipe-scroll");
 
+// Automatically loops back to the top when scrolled all the way to the bottom
 recipeScroll.addEventListener("scroll", () => {
     if (recipeScroll.scrollTop + recipeScroll.clientHeight >= recipeScroll.scrollHeight - 5) {
         recipeScroll.scrollTo({
@@ -130,6 +142,7 @@ recipeScroll.addEventListener("scroll", () => {
     }
 });
 
+// Function to scroll the recipe list up by the height of one card when clicking ▲
 function scrollUp() {
     const card = document.querySelector(".recipe-card");
 
@@ -139,6 +152,7 @@ function scrollUp() {
     });
 }
 
+// Function to scroll the recipe list down by the height of one card when clicking ▼
 function scrollDown() {
     const card = document.querySelector(".recipe-card");
 
@@ -149,6 +163,7 @@ function scrollDown() {
 }
 </script>
     
+<!-- Back to top floating link -->
 <a href="#" class="back-to-top" aria-label="Back to top">↑</a>
     
 </body>
