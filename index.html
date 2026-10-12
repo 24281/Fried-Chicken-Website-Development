@@ -134,7 +134,7 @@ const recipeScroll = document.querySelector(".recipe-scroll");
 
 // Automatically loops back to the top when scrolled all the way to the bottom
 recipeScroll.addEventListener("scroll", () => {
-    if (recipeScroll.scrollTop + recipeScroll.clientHeight >= recipeScroll.scrollHeight - 5) {
+    if (recipeScroll.scrollTop + recipeScroll.clientHeight >= recipeScroll.scrollHeight) {
         recipeScroll.scrollTo({
             top: 0,
             behavior: "smooth"
